@@ -4,8 +4,13 @@ let getElement_search_btn = document.querySelector("#search_btn")
 
 let getElement_input = document.querySelector("#input_main")
 
+let getElement_show_all = document.querySelector("#show_all_list")
+let getElement_close = document.querySelector("#close_btn")
+
 
 function start(){
+    
+
     Search_student(Apidb)
        
 
@@ -15,6 +20,18 @@ function start(){
 
 }
 
+function show_all(){
+    renderstudents(Apidb)
+}
+
+function close_all(){
+    let getElement_list = document.querySelectorAll(".std")
+    getElement_list.forEach((obj)=>{
+        obj.classList.add("close");
+    })
+
+    
+}
 
 // #dùng cho local
 
@@ -49,8 +66,8 @@ function renderstudents(data1){
 
 
 getElement_search_btn.addEventListener("click",start)
-
-
+getElement_show_all.addEventListener("click",show_all)
+getElement_close.addEventListener("click",close_all)
 
 function Search_student(data){
     
