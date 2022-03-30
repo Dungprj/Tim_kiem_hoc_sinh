@@ -55,6 +55,8 @@ function renderstudents(data1){
         <h3 class="content">Họ :${student.ho}</h3>
         <h3 class="content">Tên :${student.ten}</h3>
         <h3 class="content">Lớp :${student.lop}</h3>
+        <h3 class="content">Ngành CNTT</h3>
+
         </li>`
     })
 
