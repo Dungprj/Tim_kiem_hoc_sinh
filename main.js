@@ -54,6 +54,7 @@ function renderstudents(data1){
         <h3 class="content">Mã sinh viên  :${student.msv}</h3>
         <h3 class="content">Họ :${student.ho}</h3>
         <h3 class="content">Tên :${student.ten}</h3>
+        <h3 class="content">Ngày sinh :${student.ngay_sinh}</h3>
         <h3 class="content">Lớp :${student.lop}</h3>
         <h3 class="content">Phone :${student.Phone}</h3>
         <h3 class="content">Ngành CNTT</h3>
